@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Component } from "react";
 import styles from "./ContactAddForm.module.css";
 
@@ -61,5 +62,9 @@ class ContactAddForm extends Component {
     );
   }
 }
+
+ContactAddForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default ContactAddForm;
